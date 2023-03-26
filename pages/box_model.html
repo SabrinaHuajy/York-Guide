@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    .div1 {
+      margin: 5% 5% 5% 5%;
+      width: 300px;
+      height: 100px;
+      border: 1px solid blue;
+    }
+
+    .div2 {
+      margin: 5% 5% 5% 5%;
+      width: 300px;
+      height: 100px;
+      padding: 50px;
+      border: 1px solid red;
+    }
+
+    .div1Box {
+      margin: 5% 5% 5% 5%;
+      width: 300px;
+      height: 100px;
+      border: 1px solid blue;
+      box-sizing: border-box;
+    }
+
+    .div2Box {
+      margin: 5% 5% 5% 5%;
+      width: 300px;
+      height: 100px;
+      padding: 50px;
+      border: 1px solid red;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Padding and element width - without box-sizing</h2>
+  <div class="div1">
+    <p>Highlights of York</p>
+  </div>
+  <br>
+  <div class="div2">
+    <p>Highlights of York</p>
+  </div>
+
+  <h2>Padding and element width - with box-sizing</h2>
+  <div class="div1Box">
+    <p>Highlights of York</p>
+  </div>
+  <br>
+  <div class="div2Box">
+    <p>Highlights of York</p>
+  </div>
+
+  <h2>Using the flex display setting</h2>
+  <div style="display: flex;">
+    <div style="width: 50%;">
+      <p>What should I see in York?</p>
+      <img src="../assets/images/CliffordsTower.jpg" alt="Image of Cliffords Tower" width="100%">
+    </div>
+    <div style="width: 50%">
+      <p>Read our top suggestions here...</p>
+      <img src="../assets/images/YorkMinster.jpg" alt="Image of York Minster" width="100%">
+    </div>
+  </div>
+
+</body>
+
+</html>

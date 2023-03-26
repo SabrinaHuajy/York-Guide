@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+  <title>York quiz</title>
+</head>
+
+<body>
+  <ul class="nav">
+    <li><a href="../index.html">Home</a></li>
+    <li><a id="active" href="../pages/quiz.html">Quiz</a></li>
+    <li><a href="../pages/gallery.html">Gallery</a></li>
+  </ul>
+  <br><br>
+  <h1 id="heading"><a onmouseover='change_heading()'>Test your knowledge of York!</a></h1>
+  <div class="column full">
+    <form name="Quiz">
+      Full name: <input type="text" name="fullName" size="60">
+      <br><br>
+      What shall we call you? <input type="text" name="shortName" id="shortName" size="5" onkeyup="say_hello()">
+      <br><br>
+      <div id="Welcome">
+      </div>
+      <br><br>
+      Who first founded York?
+      <br><br>
+      <input type="radio" name="YorkQ1" value="Q1Answer1" size="5">Vikings
+      <br><br>
+      <input type="radio" name="YorkQ1" value="Q1Answer2" size="5">Romans
+      <br><br>
+      <input type="radio" name="YorkQ1" value="Q1Answer3" size="5">Normans
+      <br><br>
+
+      <p> <a onclick='show_hide()'>Show me a hint</a></p>
+      <div id="appear" style="display: none">
+        <p>The Romans founded Eboracum (now York) in 71 AD.</p>
+      </div>
+
+      <br><br>
+      What is the name of the remaining castle building in York?
+      <br><br>
+      <input type="radio" name="YorkQ2" value="Q2Answer1" size="5">Bar Walls
+      <br><br>
+      <input type="radio" name="YorkQ2" value="Q2Answer2" size="5">York Minster
+      <br><br>
+      <div id="Q2Answer3"><input type="radio" name="YorkQ2" value="Q2Answer3"> Clifford's Tower
+      </div>
+      <br><br>
+      <input type="checkbox" oninput="change_colour()">Show me the right answer
+
+      <br><br>
+      <br><br>
+      <br><br>
+      In what century was the Black Death in York?
+      <input type="number" id="YorkQ3" name="YorkQ3" min="7" max="20" step="1">
+      <br><br>
+      <br><br>
+      What is the population of York to the nearest 10,000?
+      <input type="number" id="YorkQ4" name="YorkQ4" min="100,000" max="300,000" step="10,000">
+      <br><br>
+      <button onclick="quizCheck()">Finish</button>
+    </form>
+
+    <br><br>
+    <div class="column middle">
+      <button onclick="image_swop('../assets/images/CliffordsTower.jpg')">Cliffords Tower</button>
+      <button onclick="image_swop('../assets/images/RailwayMuseum.jpg')">Railway Museum</button>
+      <button onclick="image_swop('../assets/images/YorkWalls.jpg')">York Walls</button>
+
+      <img id="myImage" src="../assets/images/YorkMinster.jpg" style="width:300px; height:300px">
+      <br><br>
+      <br><br>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
